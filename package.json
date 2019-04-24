@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently --handle-input \"npm run server\" \"npm run client\"",
     "server": "nodemon",
-    "initialize": "npm i && cd client && npm i && cd ../"
+    "initialize": "npm i && cd client && npm i && cd ../",
+    "seed": "psql -U shan -f init.sql"
   },
   "author": "",
   "license": "ISC",
